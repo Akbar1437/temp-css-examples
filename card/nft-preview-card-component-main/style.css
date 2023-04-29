@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Outfit",sans-serif;
+}
+
+.card_container {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 0.5rem;
+  max-width: 20rem;
+  max-height: 33rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px 10px rgba(29, 5, 5, 0.2);
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in-out;
+}
+.card_container:hover{
+    cursor: pointer;
+    top: -3px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card_img{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.card_img > img{
+    border-radius: 0.4rem;
+    width:18rem;
+    height:18rem;
+}
+
+.card_content{
+    margin-top: 1rem;
+ 
+}
+.card_content>h1{
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+   
+
+}
+.card_content>p{
+    margin-top: 1rem;
+    color: hsl(215, 51%, 70%)
+}
+.card_prefoot{
+    display: flex;
+    margin-top: 0.9rem;
+    justify-content: space-between;
+    margin-bottom: 0.9rem;
+}
+
+.card_prefoot > p{
+    color:hsl(178, 100%, 50%);
+    font-weight: 900;
+}
+
+.card_prefoot > p:nth-child(1):before{
+    content: '';
+    background: url(/nft-preview-card-component-main/images/icon-ethereum.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+}
+.col{
+    color:hsl(215, 51%, 70%); ;
+}
+.card_foot{
+    border-top: 1px solid hsl(215, 51%, 70%);
+    padding-top: 1rem;
+    display: flex;
+}
+
+.card_foot >img {
+    width: 2em;
+    height: 2em;
+}
+.card_foot>p{
+    color:hsl(215, 51%, 70%); 
+    padding-left: 1rem;
+    margin-top: 0.3rem;
+}
+.jul{
+    color:hsl(0, 0%, 100%);
+}
+
+
+

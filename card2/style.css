@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Outfit","Red Hot Display",sans-serif;
+}
+.container{
+   max-width: 20rem;
+   max-height: 33rem; 
+   width: 100%;
+   height: 100%;
+   background-color: hsl(225, 100%, 98%);
+   box-sizing: border-box;
+   border-radius: 1rem;
+
+}
+
+.card_img{
+    margin-bottom: 1rem;
+}
+.card_img >img {
+    width: 20em;
+    height: fit-content;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card_content{
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card_content > h1 {
+    color: hsl(223, 47%, 23%);
+    font-size: 22px;
+    text-align: center;
+}
+.card_content > p{
+    
+    margin-top: 1rem;
+    color:hsl(224, 23%, 55%)
+}
+
+.card_prefoot{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(231, 231, 231, 0.3);
+    padding: 1rem;
+    border-radius: 1rem;
+   
+}
+.card_prefoot_content{
+ display: flex;
+ color:hsl(224, 23%, 55%) ;
+}
+.card_prefoot_content >img{
+  width: 2.5rem;
+  height: 2.5em;
+}
+
+.card_prefoot_content > div {
+    margin-left:0.5rem;
+}
+
+.an{
+    color: hsl(223, 47%, 23%);
+}
+
+.btn_content{
+    margin-top: 1.5rem;
+}
+
+.btn_content > button{
+    background-color:  hsl(245, 75%, 52%) ;
+    color:hsl(225, 100%, 98%);
+    max-width: 20rem;
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0px 5px 2px rgba(19, 29, 161, 0.1)
+}
+
+.btn_content >p{
+    font-size: small;
+    font-weight: 700;
+}
+
+

@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+nav {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+}
+#checkboxMenu,
+.toggle {
+  display: none;
+}
+.menu {
+  padding: 0;
+  margin: 0;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  border: 1px solid red;
+}
+.menu li a {
+  color: black;
+  text-decoration: none;
+  align-self: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: background 0.2s linear;
+  font-weight: 700;
+}
+
+.menu li a:hover {
+  background: #ffcc01;
+  border-radius: 3px;
+}
+
+.menu li a.logo {
+  font-size: 2rem;
+  margin-right: 6rem;
+}
+
+.menu li a.contacts {
+  margin-right: 2rem;
+}
+@media screen and (max-width: 750px) {
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    width: 100%;
+    color: black;
+    background: #ffcc01;
+    transition: all 0.1s linear;
+  }
+  .toggle:hover {
+    background: #d3a900;
+  }
+  #checkboxMenu:checked + label .touch li {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.7s linear;
+  }
+  #checkboxMenu:checked + label .touch {
+    height: 350px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: 0.3s linear;
+  }
+  .menu li {
+    display: flex;
+    align-self: center;
+    width: 95%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu li a {
+    text-align: center;
+    width: 95%;
+    align-self: center;
+    align-content: center;
+  }
+  .menu li a.logo {
+    font-size: 1.8rem;
+    margin-right: 0rem;
+  }
+
+  .menu li a.contacts {
+    margin-right: 2rem;
+  }
+}
+/* ============================= */
+.slider {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  border: 1px solid red;
+}
+.slide-track {
+  display: flex;
+  width: calc(250px * 18);
+  border: 1px solid red;
+}
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid red;
+}
